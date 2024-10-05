@@ -1,7 +1,7 @@
-# Flexbox Layout
+## Flexbox Layout
 create a navigation bar using flexbox. Include at least 4 links and style them to horizontally aligned with even spacing.
 
-##Responsive website for a company: Weston's chocolate box
+## Responsive website for a company: Weston's chocolate box
 Specification:
 - a way to build your own box of chocolate
 - contact details for the company

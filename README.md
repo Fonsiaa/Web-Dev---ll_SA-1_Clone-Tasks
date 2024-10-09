@@ -1,27 +1,34 @@
-# Class Task
-## Task 1: HTML Guide
-Practice the code in your vscode from HTML Home to HTML Responsive
-## Task 2: CSS Flexbox 
-1. Flexbox layout: create a navigation bar using flexbox. Include at least 4 links and style them to horizontally aligned with even spacing
-2. Image Gallery: build a responsive image gallery using flexbox. arrange images in a row that wraps to a new line as the screen size decreases
-3. To-Do List: Create a simple to-do list application where the task are displayed using flexbox. each task should have a checkbox, a label, and a delete button, arranged in a flexbox layout
-4. Flexbox Quiz: Create a quiz layout where questions are displayed in a column and answer choices are displayed in a row using Flexbox. style it to be visually appealing
-5. Card Design: Design a card component using flexbox. the card should include an image, a title, a description, and a button. ensure that the content is centred and responsive
-   
-## Task 3: Grid Layout
-1. Dashboard interface: Build a simple dashboard layout with a header, sidebar, and main content area using CSS grid. include widget for statics, recent activity, and notification
-2. CSS grid quiz: Design a quiz layout similiar to the flexbox quiz task, but this time use CSS grid. the questions should br in one grid area, while answer should be distributed in a grid below
-3. Product page: Create a product page layout using css grid. include a product image, title, price, and description arranged in a grid format. ensure it looks good in mobile and desktop
-4. Grid layout: create a two-column layout using CSS grid. the left column should have a sidebar, and the right column should display main content. include some placeholder text in each area
-5. Responsive photo grid: Design a responsive photo gid that adjust the number so columns based on screen size. use different sized image to demonstrate how the layout adapts
+# S1: Clone Tasks
 
-## Task 4: Company Website: Weston's chocolate box
-Specification:
-- it should be responsive
-- a way to build your own box of chocolate
-- contact details for the company
-- an overview of the company
-- a means of promoting key product or package deals
-- user to sign up or sign in 
-- a way for a user to view your basket
-- a way for a user to select an occassion and begin building from there
+There is one folder for each Clone Task. Each folder contains the files you will need for that exercise. You should start by reading the `README` specification first. This will be easier to do if you open your GitHub repository in Visual Studio Code, or view your repository on GitHub.com.
+
+Your solution to each exercise should be well organised, appropriately named, and easy to find.
+
+**Only code pushed to your GitHub repository before the assessment deadline will be marked. Ensure you give yourself enough time before your final push.**
+
+## The Brief
+
+This assessment tests your ability to write high-quality and responsive HTML/CSS. For each task, you must create a webpage based on the specification provided. The specification includes wireframes showing what the page should look like on different screen sizes, as well as a written statement with additional details. You must implement the specification as accurately as possible. However, the specifications are not comprehensive, and you will also be marked the quality of the design choices you make when specifics have not been given.
+
+There are two tasks:
+
+* **Task 1:** Responsive Layout and Typography 
+* **Task 2:** Advanced Layout
+
+*You must attempt both tasks to pass the assessment.*
+
+The tasks will predominately test your ability to implement responsive designs with CSS Media Queries and to implement complex layouts with CSS Grid and Flexbox. You can test your solutions on different screen sizes using the browser developer tools in your web browser.
+
+In summary, you must ensure that your solutions:
+
+* Match the specification as accurately as possible.
+* Make good design decisions when the specification is incomplete.
+* Respond well across all screen sizes.
+* Make effective use CSS Media Queries, Flexbox, and Grid.
+* Use CSS selectors, classes, and styling techniques efficiently.
+* Use semantic HTML elements thoroughly.
+* Are well commented and formatted.
+
+*The specifications, as well as any media assets required to create the page, are included in your GitHub repository.*
+
+**Please read the full assessment brief on Minerva**

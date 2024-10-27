@@ -1,0 +1,257 @@
+/*Task 2*/
+/*specification for Task 2*/
+/*Teko font for the Headings and buttons*/
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+/*Lato for other text on the website*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap"); /*importing font from google font*/
+/*for the heading and buttons*/
+/*for the other text*/
+/*font size for certain media query*/
+/*standard spacing for margins, padding and gaps*/
+/*given color scheme*/
+/*viewport width for each media query*/
+/*for mobile*/
+/*for tablet*/
+/*for desktop*/
+/*main content container*/
+/* Importing the specifications file for task 2*/
+body {
+  margin: 0;
+  font-family: "Lato"; /*font family is the Lato*/
+  background-color: #ffffff; /* the background colour of the movie*/
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Teko";
+  background-color: #070410;
+  box-shadow: 10px 10px 15px #4dccbd;
+}
+header h1 {
+  padding: 16px;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+header nav {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+header nav li {
+  display: flex;
+  gap: 32px;
+  padding: 16px;
+}
+header nav a {
+  text-decoration: none; /* removes the underline from the links*/
+  color: #ffffff;
+  display: flex;
+}
+header button {
+  font-size: 1.5em;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 16px;
+  background-color: #ffffff;
+  font-family: "Teko";
+  border-radius: 16px;
+}
+
+main { /*the main content of the website*/
+  max-width: 900px; /*the size of the main content*/
+  font-size: 1.5em;
+  display: flex;
+  padding: 16px;
+  margin: 0 auto; /* centres the content*/
+  flex-wrap: wrap;
+}
+main .movie { /*the  movie container*/
+  box-shadow: 10px 10px 15px 0 #4dccbd; /*the shadow of the movie*/
+  margin-bottom: 16px;
+  display: flex; /* the display of the movie*/
+  flex-direction: column;
+  background-color: #070410;
+}
+main .movie .description { /*movie description*/
+  padding: 16px;
+  display: flex;
+}
+main .movie .description p {
+  padding: 16px;
+  color: #ffffff; /*text colour*/
+  font-size: 2em;
+}
+main .movie .description button {
+  font-size: 2em; /* font size of the button: 2em*/
+  border-radius: 32px;
+  font-family: "Teko";
+  background-color: #eef36a;
+  justify-content: center;
+}
+main .movie .description button:hover { /* button hover effect*/
+  background-color: #231651;
+  color: #ffffff;
+}
+
+/*for the moblie media query with a 360px to 720px viewport*/
+@media only screen and (min-width: 360px) and (max-width: 720px) {
+  header h1 {
+    font-size: 2em; /*font-size: 2em*/
+    margin: 0;
+  }
+  header nav {
+    display: none; /*removes the navigational link on the mobile media query*/
+  }
+  header button {
+    font-size: 2em;
+  }
+  main {
+    margin: 16px auto;
+  }
+  main .movie img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main .movie .description {
+    flex-direction: column;
+  }
+  main .movie .description p {
+    font-size: 16px;
+    padding: 0;
+  }
+  main .movie .description button {
+    font-size: 2em;
+    padding: auto;
+    flex-direction: row;
+  }
+}
+/*tablet media screen with 720px to 1024px*/
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  header h1 {
+    padding: 16px;
+    margin: 0;
+    font-size: 3em; /* font-size: 3em*/
+  }
+  header nav {
+    display: flex;
+    font-size: 1.5em;
+  }
+  header nav li {
+    padding: 16px;
+    margin: 0;
+  }
+  header button {
+    padding: auto;
+  }
+  main {
+    gap: 16px;
+  }
+  main .movie {
+    overflow: hidden; /* removes the overflow on the movie container*/
+    width: 48%;
+    flex-direction: column;
+  }
+  main img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  main .description {
+    font-size: 13px;
+  }
+  main .description p {
+    margin: 0;
+  }
+  main button {
+    padding: 16px;
+  }
+}
+/*end of the tablet media query*/
+/*for desktop, a media screen with viewpoet width of 1024px and up*/
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 1.5em;
+  }
+  header h1, header li {
+    padding: 16px;
+    margin: 0;
+  }
+  .movie {
+    font-size: 16px;
+    margin: 48px auto;
+  }
+  .movie .description {
+    font-size: 16px;
+    display: flex;
+  }
+  #movie1 {
+    flex-direction: column;
+  }
+  #movie1 img {
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #movie1 .description {
+    display: flex;
+  }
+  #movie1 .description p {
+    font-size: 1.5em;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+  #movie1 .description button {
+    padding: 16px;
+    flex-grow: 1;
+    font-size: 48px;
+  }
+  #movie2, #movie3 {
+    width: 45%;
+    flex-direction: column;
+    flex-grow: 1; /* this will make the two movie poster grow equally*/
+    margin-right: 16px;
+  }
+  #movie2 .description, #movie3 .description {
+    display: flex;
+    flex-direction: column;
+  }
+  #movie2 .description p, #movie3 .description p {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+  }
+  #movie2 button, #movie3 button {
+    padding: 16px;
+    font-size: 3em;
+    flex-grow: 1;
+  }
+  #movie4, #movie5, #movie6 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #movie4 img, #movie5 img, #movie6 img {
+    height: 450px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #movie4 .description, #movie5 .description, #movie6 .description {
+    flex: 1; /* take up the remaining space */
+    flex-direction: column;
+    font-size: 13px;
+    padding: 16px;
+  }
+  #movie4 .description p, #movie5 .description p, #movie6 .description p {
+    margin: 0;
+    padding: 0;
+  }
+  #movie4 .description button, #movie5 .description button, #movie6 .description button {
+    padding: 16px;
+    margin-top: 48px;
+    font-size: 3em;
+  }
+}
+/*end of the desktop media query*//*# sourceMappingURL=style.css.map */

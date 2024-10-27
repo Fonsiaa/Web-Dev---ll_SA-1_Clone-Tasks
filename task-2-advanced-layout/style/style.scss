@@ -1,0 +1,294 @@
+/*Task 2*/
+@import "./specification";/* Importing the specifications file for task 2*/
+
+body {
+    margin: 0;
+    font-family: $text; /*font family is the Lato*/
+    background-color: $white; /* the background colour of the movie*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: $heading;
+    background-color: $black;
+    box-shadow: 10px 10px 15px $turquoise;
+
+    h1 {
+        padding: $small-spacing;
+        color: $white;
+        font-size: $movie-font-size;
+    }
+
+    nav {
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        gap: $small-spacing;
+
+        li {
+            display: flex;
+            gap: $large-spacing;
+            padding: $small-spacing;
+        }
+
+        a {
+            text-decoration: none; /* removes the underline from the links*/
+            color: $white;
+            display: flex;
+        }
+    }
+
+    button {
+        font-size: $movie-font-size;
+        height:fit-content;
+        margin: $small-spacing;
+        background-color: $white;
+        font-family: $heading;
+        border-radius: $small-spacing;
+    }
+}
+
+main { /*the main content of the website*/
+    max-width: $container-width; /*the size of the main content*/
+    font-size: $movie-font-size;
+    display: flex;
+    padding: $small-spacing;
+    margin: 0 auto; /* centres the content*/
+    flex-wrap: wrap;
+
+    .movie { /*the  movie container*/
+        box-shadow: 10px 10px 15px 0 $turquoise; /*the shadow of the movie*/
+        margin-bottom: $small-spacing;
+        display: flex; /* the display of the movie*/
+        flex-direction: column;
+        background-color: $black;
+
+        .description { /*movie description*/
+            padding: $small-spacing;
+            display: flex;
+
+            p {
+                padding: $small-spacing;
+                color: $white; /*text colour*/
+                font-size: $mobile-font-size;
+            }
+    
+            button {
+                font-size: $mobile-font-size; /* font size of the button: 2em*/
+                border-radius: $large-spacing;
+                font-family: $heading;
+                background-color: $light-yellow;
+                justify-content: center;
+            }
+
+            button:hover { /* button hover effect*/
+                background-color: $purple;
+                color: $white;
+            }
+        }
+    }
+}
+
+/*for the moblie media query with a 360px to 720px viewport*/
+@media only screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+
+    header {
+        h1 {
+            font-size: $mobile-font-size; /*font-size: 2em*/
+            margin: 0;
+        }
+
+        nav {
+            display: none; /*removes the navigational link on the mobile media query*/
+            
+        }
+
+        button {
+            font-size: $mobile-font-size;
+        }
+    }
+
+    main {
+        margin: $small-spacing auto;
+
+        .movie {
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .description {
+                flex-direction: column;
+
+                p {
+                    font-size: $small-spacing   ;
+                    padding: 0;
+                }
+                
+                button {
+                    font-size: $mobile-font-size;
+                    padding: auto;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+/*tablet media screen with 720px to 1024px*/
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+
+    header {
+        h1 {
+            padding: $small-spacing;
+            margin: 0;
+            font-size: $tab-desk-font-size; /* font-size: 3em*/
+        }
+
+        nav {
+            display: flex;
+            font-size: $movie-font-size;
+
+            li {
+                padding: $small-spacing;
+                margin: 0;
+            }
+        }
+
+        button {
+            padding: auto;
+        }
+    }
+
+
+    main {
+        gap: $small-spacing;
+
+        .movie {
+            overflow: hidden; /* removes the overflow on the movie container*/
+            width: 48%;
+            flex-direction: column;
+        }
+
+        img {
+            object-fit: fill;
+        }
+
+        .description {
+            font-size: 13px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        button {
+            padding: $small-spacing;
+        }
+    }
+}
+/*end of the tablet media query*/
+
+/*for desktop, a media screen with viewpoet width of 1024px and up*/
+@media screen and (min-width: $desktop-min-width) {
+    header {
+        font-size: $movie-font-size;
+
+        h1, li{
+            padding: $small-spacing;
+            margin: 0;
+        }
+    }
+
+    .movie {
+        font-size: $small-spacing;
+        margin: $desktop-spacing auto;
+
+        .description {
+            font-size: $small-spacing;
+            display: flex;
+        }
+    }
+
+    #movie1 {
+        flex-direction: column;
+
+        img {
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .description {
+            display: flex;
+
+            p {
+                font-size: $movie-font-size;
+                width: 80%;
+                padding: 0;
+                margin: 0;
+            }
+
+            button {
+                padding: $small-spacing;
+                flex-grow: 1;
+                font-size: $desktop-spacing;
+            }
+        }        
+    }
+
+    #movie2, #movie3 {
+        width: 45%;
+        flex-direction: column;
+        flex-grow: 1; /* this will make the two movie poster grow equally*/
+        margin-right: $small-spacing;
+
+        .description {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: $mobile-font-size;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        button {
+            padding: $small-spacing;
+            font-size: $tab-desk-font-size;
+            flex-grow: 1;
+        }
+    }
+
+    #movie4, #movie5, #movie6 {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        img {
+            height: 450px;
+            object-fit: contain;
+        }
+
+        .description {
+            flex: 1; /* take up the remaining space */
+            flex-direction: column;
+            font-size: 13px;
+            padding: $small-spacing;
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            button {
+                padding: $small-spacing;
+                margin-top: $desktop-spacing;
+                font-size: $tab-desk-font-size;
+            }
+        }
+    }
+}
+/*end of the desktop media query*/

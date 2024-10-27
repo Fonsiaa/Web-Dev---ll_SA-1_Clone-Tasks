@@ -1,0 +1,110 @@
+/*importing a google font*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 5px;
+    }
+
+/*the heading for the header*/
+.top {
+  h1 {
+    font-family: "Fjalla One"; /*using the imported font*/
+    text-align: center;
+    font-size: 40px;
+    /*removing the spacing from the text to the border and the website page*/
+    padding: 0; 
+    margin: 0;
+    }  
+}
+
+.format {
+    p {
+        margin: 0;
+    }
+    pre { /*adjusting the line height of the text*/
+        line-height: 1.5;
+        text-align: center; 
+    }
+    i {
+        text-shadow: 2px 2px 2px rgb(8, 61, 152);
+    }
+    mark {
+        text-transform: uppercase;
+    }
+    small {
+        text-transform: capitalize;
+    }
+}
+
+
+.uk {
+    font-family: "Arial", Helvetica, sans-serif;
+    /* Style the header */
+    header {
+    padding: 30px;
+    text-align: center;
+    background-size: contain;
+    content: "";
+    background-image: url('/Task 1/img/london.png');
+    background-blend-mode:darken;
+    }
+    h2 {
+        font-size: 70px;
+        color: rgb(48, 2, 2);
+    }
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+    float: left;
+    width: 30%;
+    height: 200px; /* only for demonstration, should be removed */
+    background: #4d2a2a;
+    padding: 10px;
+    }
+    /* Style the list inside the menu */
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    li a{
+        color: white;
+        text-align: center;
+    }
+}
+
+/*the table for adding images*/
+.main {
+    background-color: #D8F0DA;
+    border: black solid 6px;
+}
+
+/*the header for each html guide*/
+.tag { 
+    h1 {
+    font-family: "Amatic SC";
+    background-color: rgba(215, 99, 71); /*the  background color*/
+    text-align: center; /*text on the center*/
+    }
+    font-style: normal;
+}
+
+/*the table for the arts*/
+.art{
+    tr:nth-child(odd) {
+        background-color: transparent;
+        }
+
+    #one { /*sizing the images on the table*/ 
+        width: 150px;
+    }
+}
+
+.frame{
+    background-color: antiquewhite;
+
+    iframe {
+    height: 200px;
+    width: 450px;
+    }
+}

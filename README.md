@@ -28,7 +28,3 @@ In summary, you must ensure that your solutions:
 * Use CSS selectors, classes, and styling techniques efficiently.
 * Use semantic HTML elements thoroughly.
 * Are well commented and formatted.
-
-*The specifications, as well as any media assets required to create the page, are included in your GitHub repository.*
-
-**Please read the full assessment brief on Minerva**

@@ -1,0 +1,294 @@
+/*for Task 1*/
+/*importing fonts from Google fonts*/
+/*font: Protest Guerrilla*/
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+/*font: Josefin Sans*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&display=swap");
+/*given fonts to be use*/
+/*given colours to be use for the following:*/
+/*for the content*/
+/*background colour of the page*/
+/*the colour of the footer*/
+/*desktop logo size*/
+/*tablet and mobile logo size*/
+/*standard spacing values*/
+/*author picture size*/
+/*viewpoint width for each media query*/
+/* min and max width for small mobile*/
+/* min and max width for large mobile*/
+/*min and max width for tablet*/
+/*min width for desktop*/
+/*the main layout of the website*/
+body {
+  font-family: "Josefin Sans"; /*the Josefin Sana font*/
+  background-color: #e9e9e9; /*the background colour of the website*/
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center; /*centeralized the text*/
+  padding: 20px;
+  /*the navigation part of the website*/
+}
+header img {
+  width: 80px;
+  height: auto;
+}
+header nav {
+  margin: 12px;
+  text-align: center;
+  justify-content: space-between;
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+}
+header nav li {
+  display: inline-block;
+}
+header nav a {
+  color: #14181d;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/*the content of the website*/
+main {
+  margin: auto;
+  background-color: white;
+  /*the information part of the website*/
+}
+main .top {
+  padding: 30px;
+}
+main .top h1 {
+  text-align: Left;
+  font-family: "Protest Guerrilla";
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+}
+main .top h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+  font-family: "Protest Guerrilla";
+  text-align: left;
+}
+main .info {
+  -moz-column-count: 1;
+       column-count: 1;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-bottom: 10px;
+}
+main .info p {
+  margin-bottom: 10px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+main .info h2 {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin: 0;
+}
+
+/*the image section of the website*/
+.feature {
+  display: flex;
+  justify-content: space-between;
+}
+.feature .album {
+  width: 100%;
+}
+.feature img {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*the section of the author*/
+.author {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.author .text h2 {
+  padding: 12px;
+  text-align: center;
+}
+.author .text p {
+  padding: 12px;
+}
+.author .profile {
+  text-align: center;
+}
+.author .profile img {
+  width: 200px;
+  border-radius: 50%; /*makes the picture of the author circular*/
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer { /*the footer of the website*/
+  background-color: #14181d; /* the color of the footer*/
+  color: white; /*  the color of the text in the footer*/
+  text-align: center; /* center the text in the footer*/
+  padding: 10px; /* add some padding to the footer*/
+  margin: 0 auto;
+}
+
+/*for small mobile with viewpoint of 320px-540px*/
+@media only screen and (min-width: 320px) and (max-width: 540px) {
+  /*the image section of the website*/
+  .feature .album {
+    display: none;
+  }
+  .feature .cover img {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+/*for large mobile with viewpoint of 540px-720px*/
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+  header img {
+    width: 80px;
+    height: auto;
+  }
+  header nav {
+    margin: 20px;
+  }
+  header nav a {
+    margin: 0 35px;
+  }
+  header main h1 {
+    font-size: 50px;
+  }
+  /*the image section of the website*/
+  .feature .album {
+    display: none;
+  }
+  .feature .cover img {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .author {
+    flex-basis: 50%;
+  }
+}
+/*tablet with viewpoint of 720px-1024px*/
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+  header img {
+    width: 80px;
+    height: auto;
+  }
+  header a {
+    margin: 0 50px;
+  }
+  main {
+    width: 80%;
+  }
+  main h1 {
+    font-size: 70px;
+  }
+  main h2 {
+    font-size: 65px;
+  }
+  /*the image section of the website*/
+  .feature .album {
+    display: none; /* hide the album */
+  }
+  .feature .cover {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .feature .cover img {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .author {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .author img {
+    width: 200px;
+    border-radius: 50%; /*makes the pictur eof the author circular*/
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 30px;
+  }
+} /*the end part for the tablet*/
+/*desktop with viewpoint of 1024px and up*/
+@media only screen and (min-width: 1024px) {
+  header img {
+    width: 200px;
+    height: auto;
+  }
+  header li, header a {
+    margin: 0 50px;
+  }
+  /*the content of the website*/
+  main {
+    width: 65%;
+    /*the information part of the website*/
+  }
+  main h1 {
+    font-size: 6em;
+    text-align: left;
+  }
+  main h2 {
+    font-size: 2em;
+    text-align: left;
+  }
+  main .info {
+    -moz-column-count: 3;
+         column-count: 3;
+    margin-bottom: 10px;
+  }
+  main .info p {
+    margin-bottom: 10px;
+    -moz-column-break-inside: avoid;
+         break-inside: avoid; /*the text will not break in the middle of a word*/
+  }
+  main .info h2 {
+    margin-top: 20px;
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+  }
+  /*the image section of the website*/
+  .feature .album {
+    flex: 1;
+  }
+  .feature .album img {
+    width: 100%;
+    height: 100%;
+  }
+  .feature .cover {
+    margin: 0;
+    padding: 0;
+    flex: 1; /* the cover image will take up the same amount of space as the album images*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature .cover img {
+    width: 100%;
+    height: 100%;
+  }
+  .author {
+    padding-top: 20px;
+    flex-direction: row-reverse;
+  }
+  .author .text, .author img {
+    padding: 50px;
+  }
+  footer {
+    width: 63%;
+  }
+}/*# sourceMappingURL=style.css.map */

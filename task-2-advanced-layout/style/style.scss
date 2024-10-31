@@ -244,14 +244,15 @@ main { /*the main content of the website*/
         margin-right: $small-spacing;
 
         .description {
+            height: 100%;
             flex-direction: column;
+            justify-content: space-between;
             p {
                 padding: 0;
                 margin: 0;
             }
 
             button {
-                flex-grow: 1;
                 font-size: $desktop-spacing;
             }
         }
@@ -270,6 +271,7 @@ main { /*the main content of the website*/
             flex: 1; /* take up the remaining space */
             flex-direction: column;
             padding: $small-spacing;
+            justify-content: space-between;
 
             p {
                 margin: 0;
@@ -277,7 +279,6 @@ main { /*the main content of the website*/
             }
 
             button {
-                align-content: end;
                 font-size: $desktop-spacing;
             }
         }

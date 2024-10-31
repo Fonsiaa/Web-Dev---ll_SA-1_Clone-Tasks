@@ -213,14 +213,15 @@ main .movie .description button:hover { /* button hover effect*/
     margin-right: 16px;
   }
   .movie:nth-child(2) .description, .movie:nth-child(3) .description {
+    height: 100%;
     flex-direction: column;
+    justify-content: space-between;
   }
   .movie:nth-child(2) .description p, .movie:nth-child(3) .description p {
     padding: 0;
     margin: 0;
   }
   .movie:nth-child(2) .description button, .movie:nth-child(3) .description button {
-    flex-grow: 1;
     font-size: 48px;
   }
   /*for the last three horizontal movie posters*/
@@ -236,13 +237,13 @@ main .movie .description button:hover { /* button hover effect*/
     flex: 1; /* take up the remaining space */
     flex-direction: column;
     padding: 16px;
+    justify-content: space-between;
   }
   .movie:nth-child(4) .description p, .movie:nth-child(5) .description p, .movie:nth-child(6) .description p {
     margin: 0;
     padding: 0;
   }
   .movie:nth-child(4) .description button, .movie:nth-child(5) .description button, .movie:nth-child(6) .description button {
-    align-content: end;
     font-size: 48px;
   }
 }

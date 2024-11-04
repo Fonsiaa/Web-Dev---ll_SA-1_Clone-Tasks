@@ -67,6 +67,7 @@ main { /*the main content of the website*/
         .description { /*movie description*/
             padding: $small-spacing;
             display: flex;
+            justify-content: space-between;
 
             p {
                 padding: $small-spacing;

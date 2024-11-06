@@ -224,6 +224,9 @@ footer { /*the footer of the website*/
        object-fit: cover;
     padding: 30px;
   }
+  footer {
+    width: 78%;
+  }
 } /*the end part for the tablet*/
 /*desktop with viewpoint of 1024px and up*/
 @media only screen and (min-width: 1024px) {

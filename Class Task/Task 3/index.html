@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Task</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--adding an icon-->
+</head>
+<body>
+  
+    <main>
+        <!--dashboard interface-->
+        <!--build a simple dashboard layout with a header, sidebar, and main content area using CSS grid. include widget for statics, recent activity, and notification-->
+        <section class="dash">
+            <header class="header">Header</header>
+                <aside class="sidebar">
+
+                  <div class="widget">
+                    <div class="stats">
+                      <p>Current Time: <span id="current-time"></span></p>
+                      <p>Current Date: <span id="current-date"></span></p>
+                    </div></div>
+
+                  <div class="widget recent-activity">Recent Activity Widget</div>
+                  <div class="widget nof"><i class="fa-solid fa-bell" style="color: #FFD43B;"></i>Notifications</div>
+                </aside>
+            <main class="main-content">
+              
+                <!--CSS grid quiz-->
+                <!--design a quiz layout similiar to the flexbox quiz task, but this time use CSS grid. the questions should be in one grid area, while answer should be distributed in a grid below-->
+                <section class="quiz">
+                    <div class="grid">
+                      <div class="ques">What is the capital of France?</div>
+                      <div class="ques">What is the largest planet in our solar system?</div>
+                      <div class="ques">Who painted the Mona Lisa?</div>
+                    </div>
+                    <div class="ans-grid">
+                      <div class="an">A. Berlin</div>
+                      <div class="an">B. Paris</div>
+                      <div class="an">C. London</div>
+                      <div class="an">A. Earth</div>
+                      <div class="an">B. Saturn</div>
+                      <div class="an">C. Jupiter</div>
+                      <div class="an">A. Leonardo da Vinci</div>
+                      <div class="an">B. Michelangelo</div>
+                      <div class="an">C. Raphael</div>
+                    </div>
+                </section>
+        </section>
+
+         <!--product page-->
+        <!--create a product page layout using css grid. include a product image, title, price, and description arranged in a grid format. ensure it looks good in mobile and desktop-->
+        <section class="prod">
+          <div class="grid">
+            <div class="pic">
+              <!--adding an image-->
+              <img src="product-image.jpg" alt="Product Image">
+            </div>
+            <!--info-->
+            <div class="info">
+              <h2>Diamond</h2>
+              <p class="price">Did you know?</p>
+              <p class="des">That the diamond is one of the strongest</p>
+            </div>
+          </div>
+        </section>
+
+        <!--Grid layout-->
+        <!--create a two-column layout using CSS grid. the left column should have a sidebar, and the right column should display main content. include some placeholder text in each area-->
+        <section class="layout">
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </aside>
+            <main class="main-content">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+  
+                <!--responsive photo grid-->
+                <!--design a responsive photo gid that adjust the number so columns based on screen size. use different sized image to demonstrate how the layout adapts-->
+                <section class="photo">
+                    <img src="image1.jpg" alt="Image 1" width="300" height="200">
+                    <img src="image2.jpg" alt="Image 2" width="200" height="300">
+                    <img src="image2.jpg" alt="Image 2" width="200" height="300">
+                    <img src="image2.jpg" alt="Image 2" width="200" height="300">
+                    <img src="image2.jpg" alt="Image 2" width="200" height="300">
+                </section>
+            </main>
+        </section>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

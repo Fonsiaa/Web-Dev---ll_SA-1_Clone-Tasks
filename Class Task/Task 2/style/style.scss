@@ -1,0 +1,171 @@
+$white: white;
+$font: 20px;
+$hover: rgb(102, 10, 84);
+$mid: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap'); /*importing a font*/
+
+* {
+    font-family: "Caveat"; /*font of the website*/
+    margin: 0; /*removes the space from all corner of the page*/
+    padding: 0;
+}
+
+body {
+    /*the background of the website*/
+    background-image: url(/img/8.jpeg);
+    background-size: contain;
+}
+
+/*navigational bar*/
+nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+    background-color: rgb(128, 128, 128,0.5);
+    overflow: hidden; /*hides the overflow content*/
+    img {
+        width: 100px;
+        height: auto;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    li {
+        margin: 15px;
+        margin-top: 10%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    a { /*anchor or the link*/
+        color:$white;
+        text-decoration: none;
+        font-size: $font;
+        font-size: 25px;
+    }
+    a:hover { /*hovering effect*/
+        background-color: $white;
+        color: black;
+    }
+}
+
+/*the heading for the photo gallery*/
+h1 {
+    padding: 12px;
+    color: $white;
+    text-align: $mid;
+}
+
+/*the responsive photo gallery*/
+
+.gal {
+    .pic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap:10px; /*the spaces between the images*/
+    
+        img {
+            width: 110px;
+            height:100px;
+            margin: 10px;
+        }
+    /*to make the images repsonsive*/
+    .res {
+        max-width:600px;
+        height: auto;
+        width: 100%;
+            }
+        }    
+}
+
+
+/*to-do list*/
+.list {
+    padding: 10px;
+    
+    .to-do {
+        width: 100%;
+        max-width: 540px;
+        background: $white;
+        margin: 100px auto 28px;
+        padding: 40px 30px 70px;
+    h2 {
+        color: rgb(47, 50, 50);
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        }
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: grey;
+        border-radius: 10px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+        }
+    }
+}
+
+/*the quiz flexbox*/
+.quiz {
+    display: flex;
+    justify-content: space-evenly;
+  
+div {
+    border: solid 2px $white;
+    margin: 20px;
+    width: 20%;
+    padding: 15px;
+    font-size: 30px;
+  }
+  p, li {
+    color: $white;
+  }
+  li {
+    list-style: none; /*removes the bulletin from the unordered list*/
+    padding-left:10% ; /*the spacing from the boarder to the text*/
+  }
+  /*shows the wrong answer*/
+  li:hover { /*changes the bg and text colour when hovering the choices*/
+    background-color: aliceblue;
+    color: rgb(199, 28, 16);
+  }
+  /*shows the correct answer*/
+  .check li:hover { /*changes the bg and text colour when hovering the choices*/
+    background-color: aliceblue;
+    color: rgb(13, 120, 86);
+  }
+}
+
+/*card design*/
+.card {
+    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-image: url(https://th.bing.com/th/id/R.02ca4965416a680ce161a7bc99c8bce2?rik=6OD68o1jqJ4%2f6A&riu=http%3a%2f%2fpackpros.net%2fwp-content%2fuploads%2f2016%2f04%2fcrystal-bg-1024x667.jpg&ehk=UXW25%2b%2fM124PrmnLKjOwEf8lbtBZRjM%2bL1gEJlCsdUI%3d&risl=&pid=ImgRaw&r=0);
+   align-items: center;
+   overflow: hidden;
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: black;
+   }
+   button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: solid 2px $white;
+    border-radius: 10px;
+        } 
+    }

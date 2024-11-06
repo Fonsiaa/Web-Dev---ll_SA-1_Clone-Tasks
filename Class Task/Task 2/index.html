@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--flexbox layout-->
+    <!--create a navigation bar using flexbox. Include at least 4 links and style them to horizontally aligned with even spacing.-->
+    <nav>
+
+        <ul>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Quiz</a></li>
+            <img src="/Task 2/img/miner.png" alt="cartoon miner" class="resp">
+            <li><a href="#">To-Do List</a></li>
+            <li><a href="#">Info</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <!--image gallery-->
+    <!--build a responsive image gallery using flexbox. arrange images in a row that wraps to a new line as the screen size decreases-->
+        <div class="gal">
+            <h1>Gem Stones</h1> <!--heading of the image gallery-->
+            <section class="pic"> <!--the gallery section-->
+                <!--adding an image and making it responsive-->
+                <img src="/Task 2/img/1.4.png" alt="purple gem stone" class="resp">
+                <img src="/Task 2/img/1.3.png" alt="purple gem stone" class="resp"> 
+                <img src="/Task 2/img/1.2.png" alt="ladybird" class="resp">
+                <img src="/Task 2/img/1.5.png" alt="bee" class="resp">
+                <img src="/Task 2/img/1.1.png" alt="praying mantis" class="resp">
+            </section>
+        </div>
+        
+
+        <!-- to-do lsit-->
+        <!--create a simple to-do list application where the task are displayed using flexbox. each task should have a checkbox, a label, and a delete button, arranged in a flexbox layout-->
+        <div class="list resp">
+            <div class="to-do">
+                <h2>To-Do List</h2>
+                <div class="item">
+                    <input type="text" id="input" placeholder="Add...">
+                    <button>Add</button>
+                </div>
+            </div>
+        </div>
+
+         <!--flexbox quiz-->
+        <!--create a quiz layout where questions are displayed in a column and answer choices are displayed in a row using flexbox. style it to be visually appealing-->
+        <div class="quiz">
+            <div>
+                <p>Q: What is the <b>rarest</b> material and gemstone on Earth? </p>
+                <ul>
+                    <span class="check"><li>a. Painite</li></span>
+                    <li>b. Spinel</li>
+                    <li>c. Tanzanite</li>
+                </ul>
+            </div>
+            <div>
+                <p>Q: Where is the world's <b>oldest</b> mine? </p>
+                <ul>
+                    <li>a. Russia</li>
+                    <span class="check"><li>b. England</li></span>
+                    <li>c. China</li>
+                </ul>
+            </div> 
+            <div>
+                <p>Q: What is the <b>first</b> discovered gemstone? </p>
+                <ul>
+                    <li>a. Emerald</li>
+                    <li>b. Diamond</li>
+                    <span class="check"><li>c. Amber</li></span>
+                </ul>
+            </div> 
+        </div>
+
+        <!--card design-->
+        <!--design a card component using flexbox. the card should include an image, a title, a description, and a button. ensure that the content is centered and responsive-->
+        <div class="card">
+            <div class="detail">
+                <h3>Brighter Than Tomorrow</h3>
+                <p>Discover the wide range of gemstone at</p>
+                <button>Visit Us!</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>

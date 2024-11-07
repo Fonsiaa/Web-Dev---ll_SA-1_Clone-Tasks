@@ -1,0 +1,56 @@
+/*for the product grid*/
+
+:root {
+    ---small-width: 500px
+    ---max-width: 1024px
+}
+
+/* Responsive design */
+@media (max-width: ---small-width) {
+    .grid {
+    grid-template-columns: 1fr;
+  }
+  .image {
+    height: 150px;
+  }
+  .info {
+    padding: 10px;
+  }
+}
+/*end for the product grid*/
+
+/*for the product grid*/
+/* Responsive styles */
+@media (min-width: ---small-width) {
+    .box {
+        flex-direction: row; /* Change to row layout on larger screens */
+    }
+
+    .pic, .info {
+        flex: 1; /* Allow both sections to take equal space */
+    }
+
+    .pic {
+        padding-right: 20px; /* Add space between image and info */
+    }
+}
+
+@media (max-width: ---max-width) {
+    .prod {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+}
+
+/*for the reponsive grid layout or the photo*/
+/* Media queries to adjust the number of columns based on screen size */
+@media (max-width: ---small-width) {
+    .photo-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .photo-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  } 

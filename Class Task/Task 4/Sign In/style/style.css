@@ -1,0 +1,185 @@
+/*css for the sign in form part of the website*/
+@font-face {
+  font-family: "Willy Wonka";
+  src: url(fonts/WillyWonka.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  background-color: #bf9a80;
+}
+
+/*the heading of the website*/
+header p { /*centeralized the image font*/
+  text-align: center;
+  font-family: "Willy Wonka";
+  color: #3f1414;
+  padding: 10px;
+  font-size: 500%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+header nav { /*navigational bar*/
+  position: relative;
+  padding: 10px 5px;
+  justify-content: space-evenly;
+}
+header nav ul {
+  list-style: none;
+  display: flex; /*layouts the nav text horizontally*/
+}
+header nav li {
+  list-style: none;
+  margin: 15px;
+  margin-top: 1%;
+  font-weight: 100;
+  color: antiquewhite;
+}
+header nav li button {
+  border-radius: 20%;
+  background-color: white;
+  padding: 10px;
+}
+header nav li a {
+  text-decoration: none; /*removes the underline on the anchor tag*/
+  color: white; /*colour of theanchor text*/
+}
+
+.container-fluid .row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+.container-fluid .row.no-gutter .d-none {
+  display: none;
+}
+@media (min-width: 768px) {
+  .container-fluid .row.no-gutter .d-none {
+    display: flex;
+  }
+}
+.container-fluid .row.no-gutter .bg-image {
+  background-image: url("https://lh7-us.googleusercontent.com/rHiAOK3Tsrgokd-wC9vzuX0pdOcu9q4Pglymd_MR0RsGiATO_r2jg9WAuMhfTfpem9njuZEYAIRat1cuZCgLuEMfPWb3MiJR9-50VVq3h8mAQDSYcUuI8DK7tpWgaMvcVYp1qOJYo6mhA6T7Y8tw7ys");
+  background-size: cover;
+  background-position: center;
+}
+.container-fluid .row .col-md-8,
+.container-fluid .row .col-lg-6 {
+  padding: 0 15px;
+}
+.container-fluid .row .col-md-8 .login,
+.container-fluid .row .col-lg-6 .login {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 .login-heading,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 .login-heading,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 .login-heading,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 .login-heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .form-label-group,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .form-label-group,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .form-label-group,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .form-label-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .form-label-group input.form-control,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .form-label-group input.form-control,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .form-label-group input.form-control,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .form-label-group input.form-control {
+  height: calc(3rem + 2px);
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .form-label-group label,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .form-label-group label,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .form-label-group label,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .form-label-group label {
+  position: absolute;
+  top: 0.75rem;
+  left: 1.25rem;
+  transition: all 0.2s ease-in-out;
+  color: #6c757d;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .form-label-group input:not(:-moz-placeholder-shown) + label, .container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .form-label-group input:not(:-moz-placeholder-shown) + label, .container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .form-label-group input:not(:-moz-placeholder-shown) + label, .container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .form-label-group input:not(:-moz-placeholder-shown) + label {
+  top: -0.5rem;
+  left: 1.25rem;
+  font-size: 0.85rem;
+  color: #007bff;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .form-label-group input:focus + label,
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .form-label-group input:not(:placeholder-shown) + label,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .form-label-group input:focus + label,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .form-label-group input:not(:placeholder-shown) + label,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .form-label-group input:focus + label,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .form-label-group input:not(:placeholder-shown) + label,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .form-label-group input:focus + label,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .form-label-group input:not(:placeholder-shown) + label {
+  top: -0.5rem;
+  left: 1.25rem;
+  font-size: 0.85rem;
+  color: #007bff;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .custom-control.custom-checkbox,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .custom-control.custom-checkbox,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .custom-control.custom-checkbox,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .custom-control.custom-checkbox {
+  margin-bottom: 1.5rem;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .custom-control.custom-checkbox .custom-control-input,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .custom-control.custom-checkbox .custom-control-input,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .custom-control.custom-checkbox .custom-control-input,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .custom-control.custom-checkbox .custom-control-input {
+  position: absolute;
+  margin-top: 0.3rem;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .custom-control.custom-checkbox .custom-control-label,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .custom-control.custom-checkbox .custom-control-label,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .custom-control.custom-checkbox .custom-control-label,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .custom-control.custom-checkbox .custom-control-label {
+  margin-left: 1.5rem;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .btn.btn-login,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .btn.btn-login,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .btn.btn-login,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .btn.btn-login {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .text-center a.small,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .text-center a.small,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .text-center a.small,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .text-center a.small {
+  color: #007bff;
+  text-decoration: none;
+}
+.container-fluid .row .col-md-8 .login .container .row .col-md-9 form .text-center a.small:hover,
+.container-fluid .row .col-md-8 .login .container .row .col-lg-8 form .text-center a.small:hover,
+.container-fluid .row .col-lg-6 .login .container .row .col-md-9 form .text-center a.small:hover,
+.container-fluid .row .col-lg-6 .login .container .row .col-lg-8 form .text-center a.small:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

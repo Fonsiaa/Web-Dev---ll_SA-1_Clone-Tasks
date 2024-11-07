@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/*css for the main chocolate webiste*/
+/*css for the main chocolate webiste*/
+@font-face {
+  font-family: "Willy Wonka";
+  src: url(fonts/WillyWonka.tff) format("truetype"); /*importing a downloaded font*/
+}
+/*importing  the additional css file*/
+* { /*removes the margin and padding from the website*/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bf9a80;
+}
+
+/*the heading of the website*/
+header {
+  /*navigational bar*/
+}
+header nav {
+  position: relative;
+  padding: 10px 5px;
+  justify-content: space-evenly;
+}
+header nav ul {
+  list-style: none;
+  display: flex; /*layouts the nav texthorizontally*/
+}
+header nav li {
+  margin: 15px;
+  font-weight: 100;
+  color: antiquewhite;
+}
+header nav li button { /*the sign in button*/
+  /*mixin for the sign in button*/
+  border-radius: 20%;
+  background-color: white;
+  padding: 10px;
+  border-color: white;
+}
+header nav li a {
+  text-decoration: none; /*removesthe underline on the anchor tag*/
+  color: white; /*colour of theanchor text*/
+}
+header .heading { /*the heading of the website*/ }
+header .heading p { /*centeralized the image font*/
+  /*mixin for the heading*/
+  text-align: center;
+  font-family: "Willy Wonka";
+  color: #3f1414;
+  padding: 10px;
+  font-size: 500%;
+}
+
+/*the step section of the website*/
+.step h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/*the product section of the website*/
+.row {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-flow: wrap;
+}
+.row .product, .row .product_inner .box3, .row .product_inner .box2, .row .product_inner .box1 {
+  box-shadow: 1px 5px 15px #CCC;
+  width: 13em;
+  height: auto;
+  border-radius: 3px;
+  padding: 2em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  flex: auto;
+}
+.row .product_inner {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.row .product_inner .box1 {
+  /*the styling of the box product*/
+}
+.row .product_inner img {
+  height: auto;
+  text-align: center;
+}
+.row .product_inner p {
+  color: rgba(128, 25, 25, 0.9);
+}
+.row .product_inner button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #7c3030;
+  border-radius: 3px;
+  padding: 1em 3em;
+  margin: 1em 0 0 0;
+  background: none;
+  cursor: pointer;
+  transition: background-color ease-in 0.25s;
+}
+.row .product_inner button:hover {
+  background: rgb(255, 255, 255);
+  color: #2B2D42;
+}
+.row .product_inner button:hover:before {
+  color: #2B2D42;
+}
+.row .product h2, .row .product_inner .box1 h2, .row .product_inner .box2 h2, .row .product_inner .box3 h2 {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+.row .product i, .row .product_inner .box1 i, .row .product_inner .box2 i, .row .product_inner .box3 i {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.5em;
+}
+.row .crop img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 80%;
+}
+.row .van img {
+  margin: 15%;
+}
+
+/*the end of the product section*/
+/*the footer of the website*/
+footer {
+  padding: 1%; /*from the text to the boarder*/
+  background-color: rgb(126, 70, 33); /**/
+  width: auto;
+  /*position the footer on the bottom*/
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer .medias {
+  text-align: center;
+  margin: 0 10px;
+}
+footer .medias i {
+  color: #CCC; /*correct of the icons on the footer*/
+  padding: 15px;
+}
+footer .copy p {
+  color: #CCC; /*correct of the icons on the footer*/
+  padding: 15px;
+  text-align: center;
+}
+
+/*end of the footer of the website*/
+/* Responsive styles */
+/* Desktop layout (≥ 768px) */
+@media (min-width: 768px) {
+  header {
+    padding: 2em;
+  }
+  nav ul {
+    justify-content: space-around;
+  }
+  nav li {
+    margin-right: 40px;
+  }
+}
+/* Tablet layout (≥ 480px and < 768px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  header {
+    padding: 1.5em;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+/* Mobile layout (< 480px) */
+@media (max-width: 479px) {
+  header {
+    padding: 1em;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

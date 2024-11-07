@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title> <!--title of the tab-->
+    <link rel="stylesheet" href="./style/style.css"> <!--external styling-->
+    <link rel="icon" type="icon" href="/Task 4/img/icon.svg"> <!--adding an icon the website tab-->
+</head>
+<body>
+  <!--the head and navigational of the website-->
+  <header>
+    <!--navigational bar-->
+    <nav>
+        <ul> <!--using an unordered list-->
+            <!--using a listed  item-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">Chart</a></li>
+                <li><a href="#">About</a></li>
+            <li><a href="#"><button>Sign In</button></a></li>
+        </ul>  
+    </nav> <!--end of the navigational bar-->
+      <p><a href="/Web-Dev---ll_SA-1_Clone-Tasks/Class Task/Task 4/index.html">Weston's Chocolate Box</a></p>
+  </header>
+
+<!--the sign in form-->
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Welcome back!</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
+                  <label for="inputEmail">Email address</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password">
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-center">
+                  <a class="small" href="#">Forgot password?</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+  <!-- partial -->
+    <script  src="./script.js"></script>
+
+</body>
+</html>

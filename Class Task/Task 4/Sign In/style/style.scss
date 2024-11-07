@@ -1,0 +1,185 @@
+/*css for the sign in form part of the website*/
+
+@font-face {
+    font-family: "Willy Wonka";
+    src: url(fonts/WillyWonka.ttf) format("truetype");
+}
+@mixin heading {
+  text-align: center;
+  font-family: "Willy Wonka";
+  color: #3f1414;
+  padding: 10px;
+  font-size: 500%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+$y-padding: var(--input-padding-y);
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  background-color: #bf9a80;
+}
+
+/*the heading of the website*/
+header {
+  p { /*centeralized the image font*/
+  @include heading
+  }
+  
+  nav { /*navigational bar*/
+    position: relative;
+    padding:10px 5px;
+    justify-content: space-evenly;
+
+    ul {
+      list-style: none;
+      display: flex; /*layouts the nav text horizontally*/
+    }
+
+    li {
+      list-style: none;
+      margin: 15px;
+      margin-top: 1%;
+      font-weight: 100;
+      color: antiquewhite;
+
+      button {
+        border-radius: 20%;
+        background-color: white;//colour of the button
+        padding: 10px
+      }
+
+      a {
+        text-decoration: none; /*removes the underline on the anchor tag*/
+         color: white; /*colour of theanchor text*/
+      }
+    }
+  }
+}
+
+.container-fluid {
+  .row {
+    &.no-gutter {
+      margin-left: 0;
+      margin-right: 0;
+
+      .d-none {
+        display: none;
+
+        @media (min-width: 768px) {
+          display: flex;
+        }
+      }
+
+      .bg-image {
+        background-image: url('https://lh7-us.googleusercontent.com/rHiAOK3Tsrgokd-wC9vzuX0pdOcu9q4Pglymd_MR0RsGiATO_r2jg9WAuMhfTfpem9njuZEYAIRat1cuZCgLuEMfPWb3MiJR9-50VVq3h8mAQDSYcUuI8DK7tpWgaMvcVYp1qOJYo6mhA6T7Y8tw7ys');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .col-md-8,
+    .col-lg-6 {
+      padding: 0 15px; 
+
+      .login {
+        display: flex;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        .container {
+          .row {
+            .col-md-9,
+            .col-lg-8 {
+              margin-left: auto;
+              margin-right: auto;
+
+              .login-heading {
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+                text-align: center; // Center the heading
+              }
+
+              form {
+                .form-label-group {
+                  position: relative;
+                  margin-bottom: 1.5rem;
+
+                  input.form-control {
+                    height: calc(3rem + 2px); 
+                    padding: 0.75rem 1.25rem; 
+                    font-size: 1rem; 
+                  }
+
+                  label {
+                    position: absolute;
+                    top: 0.75rem; 
+                    left: 1.25rem; 
+                    transition: all 0.2s ease-in-out;
+                    color: #6c757d; // Placeholder color
+                  }
+
+                  input:focus + label,
+                  input:not(:placeholder-shown) + label {
+                    top: -0.5rem; 
+                    left: 1.25rem; 
+                    font-size: 0.85rem; 
+                    color: #007bff; 
+                  }
+                }
+
+                .custom-control {
+                  &.custom-checkbox {
+                    margin-bottom: 1.5rem;
+
+                    .custom-control-input {
+                      position: absolute;
+                      margin-top: 0.3rem; 
+                    }
+
+                    .custom-control-label {
+                      margin-left: 1.5rem; 
+                    }
+                  }
+                }
+
+                .btn {
+                  &.btn-login {
+                    display: block;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin-bottom: 1rem; 
+                  }
+                }
+
+                .text-center {
+                  a.small {
+                    color: #007bff; // Link color
+                    text-decoration: none;
+
+                    &:hover {
+                      text-decoration: underline; // Underline on hover
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

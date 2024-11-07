@@ -1,0 +1,22 @@
+/*css for the main chocolate webiste*/
+
+@font-face {
+    font-family:"Willy Wonka";
+    src:url(fonts/WillyWonka.tff)format("truetype"); /*importing a downloaded font*/
+}
+
+$Wonka: "Willy Wonka";
+@mixin heading { /*mixin for the heading*/
+  text-align: center;
+  font-family: $Wonka;
+  color: #3f1414;
+  padding: 10px;
+  font-size: 500%;
+}
+
+@mixin button { /*mixin for the sign in button*/
+  border-radius: 20%;
+  background-color: white;//colour of the button
+  padding: 10px;
+  border-color: white;
+}

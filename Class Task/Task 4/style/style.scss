@@ -1,0 +1,231 @@
+/*css for the main chocolate webiste*/
+
+@import "./additional"; /*importing  the additional css file*/
+
+
+* {/*removes the margin and padding from the website*/
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: #bf9a80;
+}
+
+/*the heading of the website*/
+header {
+  /*navigational bar*/
+  nav {
+  position: relative;
+  padding:10px 5px;
+  justify-content: space-evenly;
+
+    ul {
+      list-style: none;
+      display: flex; /*layouts the nav texthorizontally*/
+    }
+
+    li {
+      margin: 15px;
+      font-weight: 100;
+      color: antiquewhite;
+
+      button { /*the sign in button*/
+        @include button
+      }
+
+      a {
+        text-decoration: none; /*removesthe underline on the anchor tag*/
+        color: white; /*colour of theanchor text*/
+      }
+    }
+  }
+
+  .heading { /*the heading of the website*/
+    p { /*centeralized the image font*/
+      @include heading
+    }
+  }
+
+}
+
+/*the step section of the website*/
+.step {
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+/*the product section of the website*/
+.row {  
+    position:relative;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+
+  .product {
+    box-shadow: 1px 5px 15px #CCC;
+    width: 13em;
+    height: auto;
+    border-radius: 3px;
+    padding: 2em;
+    margin: 1em;
+    overflow: hidden;
+    position: relative;
+    flex: auto;
+
+    &_inner {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+
+      .box1 {
+        @extend .product; /*the styling of the box product*/
+      }
+      .box2 {
+        @extend .product;
+      }
+      .box3 {
+        @extend .product;
+      }
+
+  img {
+    height: auto;
+    text-align: center;
+  }
+
+    p {
+      color: rgba(128, 25, 25, 0.9);
+    }
+    button {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: #7c3030;
+      border-radius: 3px;
+      padding: 1em 3em;
+      margin: 1em 0 0 0;
+      background: none;
+      cursor: pointer;
+      transition: background-color ease-in .25s;
+      &:hover {
+        background: rgba(255, 255, 255, 1);
+        color: #2B2D42;
+      }
+      
+      &:hover:before {
+        color: #2B2D42;
+      }
+    }
+  }
+
+    h2 {
+      color: rgba(43, 45, 66, 0.7);
+      font-size: 1.2em;
+      margin: 1em 0;
+    }
+    i {
+      color: rgba(43, 45, 66, 0.7);
+      font-size: 1.5em;
+    }
+  }
+
+  .crop {
+    img {
+    object-fit: cover;
+    object-position: center;
+    width: 80%;
+    }
+  }
+
+  .van {
+    img {
+     margin: 15%; 
+    }
+  }
+}
+/*the end of the product section*/
+
+/*the footer of the website*/
+footer {
+  padding: 1%; /*from the text to the boarder*/
+  background-color: rgb(126, 70, 33); /**/
+  width: auto;
+  /*position the footer on the bottom*/
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .medias {
+    text-align: center;
+    margin: 0 10px;
+    
+    i {
+      color: #CCC; /*correct of the icons on the footer*/
+      padding: 15px;
+    }
+  }
+
+  .copy {
+    p {
+      color: #CCC; /*correct of the icons on the footer*/
+      padding: 15px;
+      text-align: center;
+    }
+  }
+}
+/*end of the footer of the website*/
+
+/* Responsive styles */
+/* Desktop layout (≥ 768px) */
+@media (min-width: 768px) {
+    header {
+        padding: 2em;
+    }
+    nav {
+        ul {
+        justify-content: space-around;
+        }
+
+        li {
+        margin-right: 40px;
+        }
+    }
+}
+
+/* Tablet layout (≥ 480px and < 768px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    header {
+        padding: 1.5em;
+    }
+
+    nav{
+       ul {
+        flex-wrap: wrap;
+        }
+
+        li {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+    }  
+}
+
+/* Mobile layout (< 480px) */
+@media (max-width: 479px) {
+    header {
+        padding: 1em;
+    }
+
+    nav {
+        ul {
+        flex-direction: column;
+        }
+
+        li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        }  
+    }       
+}

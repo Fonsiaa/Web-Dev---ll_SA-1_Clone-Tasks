@@ -134,12 +134,30 @@ footer { /*the footer of the website*/
   background-color: #14181d; /* the color of the footer*/
   color: white; /*  the color of the text in the footer*/
   text-align: center; /* center the text in the footer*/
-  padding: 10px; /* add some padding to the footer*/
+  padding: 14.5px; /*padding to the footer*/
   margin: 0 auto;
 }
 
 /*for small mobile with viewpoint of 320px-540px*/
 @media only screen and (min-width: 320px) and (max-width: 540px) {
+  /*the navigational bar*/
+  header {
+    padding: 0;
+  }
+  header img {
+    padding: 12px;
+  }
+  header nav ul {
+    margin: 5px 0;
+  }
+  /*the content for the small device*/
+  main .top {
+    padding: 15px;
+  }
+  main .top h1, main .top h2 {
+    text-align: center;
+    font-size: 50px;
+  }
   /*the image section of the website*/
   .feature .album {
     display: none;
@@ -148,7 +166,13 @@ footer { /*the footer of the website*/
     justify-content: center;
     width: 100%;
     height: auto;
-    padding-bottom: 10px;
+  }
+  .author .text h2 {
+    font-size: 50px;
+    margin: 0;
+  }
+  .author .text p {
+    margin: 0;
   }
 }
 /*for large mobile with viewpoint of 540px-720px*/
@@ -157,11 +181,8 @@ footer { /*the footer of the website*/
     width: 80px;
     height: auto;
   }
-  header nav {
-    margin: 20px;
-  }
-  header nav a {
-    margin: 0 35px;
+  header nav ul {
+    margin: 50px 0 0;
   }
   header main h1 {
     font-size: 50px;
@@ -173,8 +194,6 @@ footer { /*the footer of the website*/
   .feature .cover img {
     justify-content: center;
     width: 100%;
-    height: auto;
-    padding-bottom: 10px;
   }
   .author {
     flex-basis: 50%;
@@ -225,7 +244,8 @@ footer { /*the footer of the website*/
     padding: 30px;
   }
   footer {
-    width: 78%;
+    width: 77%;
+    padding: 11px;
   }
 } /*the end part for the tablet*/
 /*desktop with viewpoint of 1024px and up*/
@@ -239,7 +259,7 @@ footer { /*the footer of the website*/
   }
   /*the content of the website*/
   main {
-    width: 65%;
+    width: 75%;
     /*the information part of the website*/
   }
   main h1 {
@@ -285,13 +305,23 @@ footer { /*the footer of the website*/
     height: 100%;
   }
   .author {
-    padding-top: 20px;
+    padding: 20px;
     flex-direction: row-reverse;
+    width: 80%;
+    justify-self: center;
   }
-  .author .text, .author img {
-    padding: 50px;
+  .author img {
+    padding: 12px;
+  }
+  .author .text h2 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  .author .text p {
+    margin: 0;
+    padding: 0;
   }
   footer {
-    width: 63%;
+    width: 72%;
   }
 }/*# sourceMappingURL=style.css.map */

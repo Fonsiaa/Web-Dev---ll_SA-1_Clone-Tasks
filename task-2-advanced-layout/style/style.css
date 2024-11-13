@@ -82,7 +82,6 @@ main .movie .description { /*movie description*/
 main .movie .description p {
   padding: 16px;
   color: #ffffff; /*text colour*/
-  font-size: 2em;
 }
 main .movie .description button {
   font-size: 2em; /* font size of the button: 2em*/
@@ -144,8 +143,8 @@ main .movie .description button:hover { /* button hover effect*/
     padding: 16px;
     margin: 0;
   }
-  header nav button {
-    padding: auto;
+  header button {
+    margin: 32px;
   }
   main {
     gap: 16px;
@@ -162,14 +161,15 @@ main .movie .description button:hover { /* button hover effect*/
   main .description {
     justify-content: space-between;
     flex-grow: 1;
+    flex-direction: column;
   }
   main .description p {
     margin: 0;
-    font-size: 3em;
   }
   main .description button {
     font-size: 32px;
-    display: flex;
+    padding: 0 65px;
+    line-height: 55px;
   }
 }
 /*end of the tablet media query*/
@@ -183,11 +183,11 @@ main .movie .description button:hover { /* button hover effect*/
     margin: 0;
   }
   .movie {
-    font-size: 16px;
+    font-size: 3em;
     margin: 48px auto;
   }
   .movie .description {
-    font-size: 16px;
+    font-size: 32px;
     display: flex;
   }
   /*the main movie poster on top*/

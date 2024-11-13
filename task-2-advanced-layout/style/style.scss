@@ -72,7 +72,6 @@ main { /*the main content of the website*/
             p {
                 padding: $small-spacing;
                 color: $white; /*text colour*/
-                font-size: $mobile-font-size;
             }
     
             button {
@@ -108,9 +107,7 @@ main { /*the main content of the website*/
 
     main {
         margin: $small-spacing auto;
-
         .movie {
-
             img {
                 width: 100%;
                 object-fit: contain;
@@ -148,9 +145,10 @@ main { /*the main content of the website*/
                 padding: $small-spacing;
                 margin: 0;
             }
-            button {
-                padding: auto;
-            }
+        }
+
+        button {
+            margin: $large-spacing;
         }
     }
 
@@ -168,13 +166,14 @@ main { /*the main content of the website*/
         .description {
             justify-content: space-between;
             flex-grow: 1;
+            flex-direction: column;
             p {
                 margin: 0;
-                font-size: $tab-desk-font-size;
             }
             button {
                 font-size: $large-spacing;
-                display: flex;
+                padding: 0 65px;
+                line-height: 55px;
             }
         }
     }
@@ -191,10 +190,10 @@ main { /*the main content of the website*/
         }
     }
     .movie {
-        font-size: $small-spacing;
+        font-size: $tab-desk-font-size;
         margin: $desktop-spacing auto;
         .description {
-            font-size: $small-spacing;
+            font-size: $large-spacing;
             display: flex;
         }
     }

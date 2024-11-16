@@ -1,0 +1,99 @@
+/*importing the media queries*/
+
+@import "./media-queries";
+
+* {
+    margin: 0;
+}
+
+/*dashboard interface*/
+.dash {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+    "header header"
+    "sidebar main-content";
+    height: 100vh;
+
+    .header {
+      grid-area: header;
+      background-color: #aa7d55;
+      color: #fff;
+      text-align: center;
+      font-size: 40px;
+      padding-top: 13px;
+    }
+    
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #ffffff;
+      padding: 30px;
+    }
+    
+    .main-content {
+      grid-area: main-content;
+      padding: 20px;
+    }
+
+    .widget:hover {
+        background-color: #aa7d55;
+    }
+    
+    .widget {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 20px;
+  
+      .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            p {
+            margin-bottom: 10px;
+            }
+            span {
+            font-weight: bold;
+            }
+        }
+
+        i {
+            padding-right: 15%;
+            border-radius: 8%;
+        }
+    }
+  }
+
+/*photo grid*/
+.bg-img {
+    background-image: url(https://th.bing.com/th/id/R.84de3375f5a34b3198b77de0978c688a?rik=2DqmFyXmcz0lgA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f4%2f4b%2fField_of_wild_grass_high_grass.jpg&ehk=nEjTSHZ40sYiZS%2b%2f1%2fVfKAkb6NqncaFhlHGX4j%2fCcfU%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-repeat: none;
+    filter: blur(8px);
+        -webkit-filter: blur(8px);
+}
+
+.layout {
+    display: grid;
+    grid-template-columns:  1fr;
+    
+    .photo {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        transform: translate(23%, -100%);
+        position: absolute;
+        width: 75%;
+        z-index: 2;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5%;
+        } 
+    }
+}
+/*end of the photo grid*/

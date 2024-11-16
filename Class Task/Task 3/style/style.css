@@ -193,20 +193,4 @@
 .layout .main-content {
   grid-column: 2;
   padding: 20px;
-}
-
-/*responsive photo*/
-.photo {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-  padding: 20px;
-}
-.photo img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/*end of the responsive photo*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

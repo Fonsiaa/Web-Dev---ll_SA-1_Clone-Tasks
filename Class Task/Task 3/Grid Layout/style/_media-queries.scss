@@ -1,0 +1,47 @@
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .dash {
+        grid-template-columns: 1fr; /* Stack columns */
+        grid-template-rows: auto; /* Allow rows to adjust */
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "main-content";
+    }
+
+    .header {
+        font-size: 30px; 
+    }
+
+    .sidebar {
+        padding: 15px; 
+    }
+
+    .main-content {
+        padding: 15px; 
+    }
+}
+
+/*photo grid*/
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;    
+    
+    .photo {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        position: relative; /* Changed from absolute to allow flow */
+        width: 100%; /* Make it responsive */
+        
+        img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover;
+            border-radius: 5%;
+        } 
+    }
+}
+
+/*end of the photo grid*/

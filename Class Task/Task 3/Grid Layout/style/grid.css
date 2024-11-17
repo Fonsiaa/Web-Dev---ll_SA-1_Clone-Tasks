@@ -26,12 +26,12 @@
   grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
   gap: 20px;
   padding: 20px;
-  position: relative; /* Changed from absolute to allow flow */
-  width: 100%; /* Make it responsive */
+  position: relative; /*allowing the photos to flow */
+  width: 100%;
 }
 .layout .photo img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio of the image */
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5%;
@@ -57,24 +57,22 @@
   text-align: center;
   font-size: 40px;
   padding-top: 13px;
+  position: relative;
 }
 .dash .sidebar {
   grid-area: sidebar;
   background-color: #ffffff;
   padding: 30px;
 }
-.dash .main-content {
-  grid-area: main-content;
-  padding: 20px;
-}
 .dash .widget:hover {
   background-color: #aa7d55;
 }
 .dash .widget {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #ca9a60;
   padding: 10px;
   margin-bottom: 20px;
+  border-radius: 5%;
 }
 .dash .widget .stats {
   display: flex;
@@ -89,18 +87,9 @@
 }
 .dash .widget i {
   padding-right: 15%;
-  border-radius: 8%;
 }
 
 /*photo grid*/
-.bg-img {
-  background-image: url(https://th.bing.com/th/id/R.84de3375f5a34b3198b77de0978c688a?rik=2DqmFyXmcz0lgA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f4%2f4b%2fField_of_wild_grass_high_grass.jpg&ehk=nEjTSHZ40sYiZS%2b%2f1%2fVfKAkb6NqncaFhlHGX4j%2fCcfU%3d&risl=&pid=ImgRaw&r=0);
-  background-size: cover;
-  background-repeat: none;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
-
 .layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -110,10 +99,8 @@
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 20px;
   padding: 20px;
-  transform: translate(23%, -100%);
   position: absolute;
   width: 75%;
-  z-index: 2;
 }
 .layout .photo img {
   width: 100%;

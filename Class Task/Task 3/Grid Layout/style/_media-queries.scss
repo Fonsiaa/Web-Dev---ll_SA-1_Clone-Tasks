@@ -32,12 +32,12 @@
         grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
         gap: 20px;
         padding: 20px;
-        position: relative; /* Changed from absolute to allow flow */
-        width: 100%; /* Make it responsive */
+        position: relative; /*allowing the photos to flow */
+        width: 100%; 
         
         img {
             width: 100%;
-            height: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio of the image */
             object-fit: cover;
             border-radius: 5%;
         } 

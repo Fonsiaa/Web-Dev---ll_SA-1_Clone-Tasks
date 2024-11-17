@@ -9,14 +9,11 @@
 <body>
     <!-- to-do list-->
         <!--create a simple to-do list application where the task are displayed using flexbox. each task should have a checkbox, a label, and a delete button, arranged in a flexbox layout-->
-        <div class="list resp">
-            <div class="to-do">
-                <h2>To-Do List</h2>
-                <div class="item">
-                    <input type="text" id="input" placeholder="Add...">
-                    <button>Add</button>
-                </div>
-            </div>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addTaskButton">Add Task</button>
+            <ul id="taskList"></ul>
         </div>
 
         <script src="./javascript.js"></script>

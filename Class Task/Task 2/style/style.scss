@@ -13,7 +13,7 @@ $mid: center;
 
 body {
     /*the background of the website*/
-    background-image: url(/img/8.jpeg);
+    background-image: url(Task\ 2/img/8.jpeg);
     background-size: contain;
 }
 
@@ -80,35 +80,6 @@ h1 {
         }    
 }
 
-
-/*to-do list*/
-.list {
-    padding: 10px;
-    
-    .to-do {
-        width: 100%;
-        max-width: 540px;
-        background: $white;
-        margin: 100px auto 28px;
-        padding: 40px 30px 70px;
-    h2 {
-        color: rgb(47, 50, 50);
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        }
-    .item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: grey;
-        border-radius: 10px;
-        padding-left: 20px;
-        margin-bottom: 25px;
-        }
-    }
-}
-
 /*the quiz flexbox*/
 .quiz {
     display: flex;
@@ -122,7 +93,7 @@ div {
     font-size: 30px;
   }
   p, li {
-    color: $white;
+    color: black;
   }
   li {
     list-style: none; /*removes the bulletin from the unordered list*/

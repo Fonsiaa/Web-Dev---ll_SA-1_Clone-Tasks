@@ -7,7 +7,7 @@
 
 body {
   /*the background of the website*/
-  background-image: url(/img/8.jpeg);
+  background-image: url(Task\ 2/img/8.jpeg);
   background-size: contain;
 }
 
@@ -70,33 +70,6 @@ h1 {
   width: 100%;
 }
 
-/*to-do list*/
-.list {
-  padding: 10px;
-}
-.list .to-do {
-  width: 100%;
-  max-width: 540px;
-  background: white;
-  margin: 100px auto 28px;
-  padding: 40px 30px 70px;
-}
-.list .to-do h2 {
-  color: rgb(47, 50, 50);
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.list .to-do .item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: grey;
-  border-radius: 10px;
-  padding-left: 20px;
-  margin-bottom: 25px;
-}
-
 /*the quiz flexbox*/
 .quiz {
   display: flex;
@@ -112,7 +85,7 @@ h1 {
   font-size: 30px;
 }
 .quiz p, .quiz li {
-  color: white;
+  color: black;
 }
 .quiz li {
   list-style: none; /*removes the bulletin from the unordered list*/

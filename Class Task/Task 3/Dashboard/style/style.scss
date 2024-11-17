@@ -103,58 +103,6 @@
   }
 }
 
-/*product page*/
-.prod {
-  display: grid;
-  place-items: center;
-  height: 50vh;
-  margin: 0;
-  padding: 0;
-
-  .box {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #000000;
-
-    .pic {
-      grid-column: 1;
-      object-fit: cover;
-      border-radius: 10px 0 0 10px;
-      img {
-        width: 100%;
-        height: 250px;
-      }
-    }
-  
-    .info {
-      grid-column: 2;
-      padding: 20px;
-
-      h2{
-        color: #fff;
-        font-size: 35px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 5%;
-      }
-      .price {
-        font-size: 18px;
-        font-weight: bold;
-        color: #8033b7;
-      }
-      .des {
-        font-size: 16px;
-        color: #666;
-        text-align: justify;
-      }
-    }
-  }
-}
-/*end of the product grid*/
-
 /*grid layout*/
 .layout {
   display: grid;

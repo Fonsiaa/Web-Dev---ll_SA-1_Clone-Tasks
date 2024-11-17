@@ -1,0 +1,58 @@
+/*product page*/
+
+body {
+  background-image: url("https://th.bing.com/th/id/R.96472182eb997145bb6a07254f6cb6a8?rik=x0%2bHlU5L7FlW4Q&pid=ImgRaw&r=0");
+  background-position: center;
+  background-size: cover;
+  margin: 150px;
+}
+
+
+.prod {
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  
+    .box {
+      display: grid;
+      margin: 0 auto;
+      padding: 20px;
+      border: #666 1px solid;
+  
+      .pic {
+        grid-column: 1;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+        img {
+          width: auto;
+          height: 450px;
+        }
+      }
+    
+      .info {
+        grid-column: 2;
+        padding: 20px;
+  
+        h2{
+          color: #fff;
+          font-size: 45px;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 5%;
+        }
+        .title {
+          font-size: 24px;
+          font-weight: bold;
+          color: #8033b7;
+        }
+        .des {
+          font-size: 24px;
+          color: #666;
+          text-align: justify;
+        }
+      }
+    }
+  }
+  /*end of the product grid*/
